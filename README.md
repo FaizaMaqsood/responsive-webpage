@@ -16,3 +16,9 @@ responsive-webpage/
 ├── index.html
 ├── style.css
 └── README.md
+# How to Use
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/FaizaMaqsood/responsive-webpage.git
+2. Open index.html in any browser to view the webpage.
+
