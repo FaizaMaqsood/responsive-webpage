@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-image: url('/assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(216, 216, 216, 0.7);
+    padding: 0 5%;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #075893;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 10px 20px;
+    background-color: #075893;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 150px;  
+    width: auto;       
+}
+
+.header-buttons button:hover {
+    background-color: white;
+    color: #075893;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+span {
+    color: #075893;
+}
+
+button {
+    padding: 12px;
+    background-color: #075893;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 150px;  
+    width: auto;        
+}
+
+button:hover {
+    background-color: white;
+    color: #075893;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 4%;
+    }
+
+    .nav a {
+        padding: 8px 12px;
+    }
+
+    .header-buttons button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 0 3%;
+    }
+
+    .nav a {
+        padding: 7px 10px;
+    }
+
+    .header-buttons button {
+        padding: 7px 14px;
+    }
+
+    .container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 2%;
+        height: auto; 
+    }
+
+    .nav {
+        margin-top: 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-buttons {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 10% 5%;
+    }
+
+    .nav a {
+        padding: 6px 8px;
+    }
+
+    .header-buttons button {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Remove this rule to keep the p tag visible */
+    /* .logo p {
+        display: none;
+    } */
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav a {
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+
+    .header-buttons button {
+        width: auto;  
+        padding: 5px 10px;
+        max-width: 150px;  
+    }
+
+    .container {
+        padding: 15% 3%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 2%;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center; 
+    }
+
+    .nav a {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .header-buttons {
+        gap: 5px; 
+        justify-content: center; 
+    }
+
+    .header-buttons button {
+        padding: 4px 8px;
+        width: auto; 
+        max-width: 150px;  
+        margin: 0; 
+    }
+
+    .container {
+        padding: 20% 2%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
